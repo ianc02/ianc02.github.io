@@ -1,6 +1,8 @@
+---
 layout: page
-title: "Contact"
-permalink: /https://ianc02.github.io/contact/
+title: Contact
+permalink: /contact/
+---
 
 # Header test
 
