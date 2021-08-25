@@ -22,8 +22,8 @@ title: My First Website!
 email: Campbellni@hendrix.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my website! I am just learning Jekyll and how to 
-  create and customize these static sites so I can post progress 
-  and projects online!
+  create and customize these static sites so I can post projects 
+  and progress online!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ianc02
