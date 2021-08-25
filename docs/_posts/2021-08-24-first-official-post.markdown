@@ -11,3 +11,6 @@ I am starting this as a part of the Disco Tray Studios that I was recently emplo
 but I also plan on using it for personal projects and ways to track my progress over time.
 It will take me a bit before I can figure out how to like some of my projects to the site, 
 so for now it will just be text blogs.
+
+I am going to keep a lot of the default jekyll code on the site for now to use as
+a reference as I learn how to fully utilize all the tools.
