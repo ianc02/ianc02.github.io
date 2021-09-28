@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Disco Tray Studios First Meeting!"
-date: 2021-08-30 16:36
+title: "Update on Unity games"
+date: 2021-09-27 23:47
 categories: jekyll update
 ---
 The past couple weeks, Jonathon, Andrew, and I have been meeting up with past community partners
