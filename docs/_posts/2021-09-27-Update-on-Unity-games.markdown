@@ -26,5 +26,5 @@ in our meeting though.
 I have also made a bit of progress in the Chem-Sim game, which focuses on users to create reactions by selecting
 different molecules and being able to be quizzed on their enthalpy, entropy, and Gibbs free energy values. Most of
 the work that I have put into it so far has been commenting code since I was a part of the original team in the spring.
-I have not been working on @itsmaya, a decision based game that follows the life of Maya, a young black girl, as she
-traverses through the public school system being indirectly impacted by players decisions as higher-ups in the school system. 
+I have not been working on "@"itsmaya, a decision based game that follows the life of Maya, a young black girl, as she
+traverses through the public school system being indirectly impacted by players decisions as higher-ups in the school system.
