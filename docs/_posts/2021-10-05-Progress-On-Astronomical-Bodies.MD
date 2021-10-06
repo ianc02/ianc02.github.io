@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Progress on Astronomical Bodies"
-date: 2021-10527 17:02
+date: 2021-10-05 17:02
 categories: jekyll update
 ---
 This past week, I have been working a lot on the Astronomical Bodies game. The majority of my
