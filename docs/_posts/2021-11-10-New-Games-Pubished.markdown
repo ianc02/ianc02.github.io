@@ -24,3 +24,7 @@ game and everything is running a bit more smoothly and looking a bit better!
 At this point, I believe most of our focus is going to be going towards trying
 to get @itsmaya completed or at least at a good level of completion that we can
 have Dr. Veselka-Bush try it out and give a lot of feedback.
+
+[Chem-Sim on itch.io](https://discotraystudios.itch.io/chemsim)
+
+[Climate Goes Political on itch.io](https://discotraystudios.itch.io/climate-goes-political)
