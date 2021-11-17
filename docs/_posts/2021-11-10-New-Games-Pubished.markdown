@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Two Games Published!"
+title: "Two More Games Published!"
 date: 2021-11-10 02:20
 categories: jekyll update
 ---
