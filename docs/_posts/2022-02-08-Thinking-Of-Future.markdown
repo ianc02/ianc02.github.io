@@ -11,8 +11,9 @@ whether to continue on with either Art-tastrophe or the Career Services game. I
 don't believe we made a concrete decision yet, but we are getting prepared for
 either direction. I sent a message to the Director of the Windgate Museum of Art,
 Mary Kennedy, to ask about her ideas on the game and to set up a meeting time. I
-have not got a response back yet, but I am hopeful that we will continue work on
-it. For Career Services, Dr. Goadrich introduced us to an awesome Python engine for
+have not got a response back yet, but I am hopeful that we will continue work on it.
+
+For Career Services, Dr. Goadrich introduced us to an awesome Python engine for
 creating interactive narratives called Ren'py, which has been used to make games
 like Doki Doki Literature Club and A Letter of Challenge. I have been watching
 introductory videos in order to learn the system and get used to it, and am
