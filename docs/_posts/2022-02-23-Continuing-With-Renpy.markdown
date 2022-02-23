@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Managing Ren'py"
-date: 2022-02-16 02:40
+date: 2022-02-23 02:40
 categories: jekyll update
 ---
 At first, I thought this project would be simple and easy because of how simple Ren'py
