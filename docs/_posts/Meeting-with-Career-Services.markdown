@@ -23,4 +23,4 @@ be moving forward. As a dream goal, I wanted to get the game into a rough beta v
 with all four years playable but after our meeting progressed and especially reflecting
 on it after the fact with all the changes we are thinking of implementing, I believe
 at a minimum we are going to try and get a good version of the game with the first 2 years
-playable before summer. 
+playable before summer.
