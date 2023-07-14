@@ -16,6 +16,17 @@ h1{
     align-items: center;
     margin: 5px;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 h2{
     
     text-align: center;
@@ -39,3 +50,43 @@ h2{
     background-color: #ddd;
     color: #000;
   }
+
+  .svg-icon { 
+    width: 16px; 
+    height: 16px; 
+    display: inline-block; 
+    fill: #414040; 
+    padding-right: 5px; 
+    vertical-align: text-top; 
+  }
+  ul{
+    margin-left: 30px;
+  }
+
+  .footer-col-wrapper { 
+    font-size: 15px; 
+    color: #828282; 
+    margin-left: -15px; 
+  }
+
+
+  .footer-col { 
+    float: left; 
+    margin-bottom: 15px; 
+    padding-left: 15px; 
+  }
+
+    .contact-list, .social-media-list { 
+      list-style: none; 
+      text-align: center;
+    }
+  .social-media-list li {
+    display:inline-block; 
+    width: 110px;
+  }
+  
+  
+
+    
+
+
