@@ -1,5 +1,9 @@
-body {
+
+html, body {
     background-color: rgb(255, 224, 199);
+    height:100%;
+    width: 100%;
+    margin: 0;
 }
 
 h1{
@@ -84,7 +88,36 @@ h2{
     display:inline-block; 
     width: 110px;
   }
+
+  .aboutBorder {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .aboutBorder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .left{
+    order: 0;
+  }
+  .middleContent{
+    flex: 7;
+    order: 1;
+  }
+  .right{
+    order: 2;
+  }
   
+  .allContent{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
   
 
     

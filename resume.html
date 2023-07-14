@@ -4,8 +4,67 @@
         <title>Resume</title>
     </header>
     <body>
-        <h1>
-            Add some "RESUME" stuff here, Ian!
-        </h1>
+        <div class="allContent">
+            <div>
+                <h1>
+                    Thanks for taking an interest in my professional development! I have two areas of interest regarding my career: Computer Science and Biochemistry. I excel in both and have both resumes ready for view down below!
+                </h1>
+                <div class="buttons">
+                    <button id="CSRButton">
+                        Computer Science Resume
+                    </button>
+                    <button id="BCRButton">
+                        Biochemistry Resume
+                    </button>
+                </div>
+            </div>
+            <object id="pdfDisplayer"  data="images/Compsci Resume.pdf" type="application/pdf"  height="800px">
+                <p>Unable to Display PDF file. <a href="images/Biochem Resume.pdf">Download</a> instead</p>
+        </div>
+
+        
     </body>
+
+    <style>
+        
+        .hide{
+            display: none;
+        }
+
+        .buttons{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 10px;
+        }
+
+        button{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #pdfDisplayer{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+    </style>
+
+    <script>
+        const CSRButton = document.querySelector("#CSRButton");
+        const BCRButton = document.querySelector("#BCRButton");
+        const pdfDisplayer = document.querySelector("#pdfDisplayer")
+        CSRButton.addEventListener('click', () =>{
+            pdfDisplayer.data = "images/Compsci Resume.pdf";
+        })
+        BCRButton.addEventListener('click', () =>{
+            pdfDisplayer.data = "images/Biochem Resume.pdf";
+        })
+    </script>
+        
 </html>

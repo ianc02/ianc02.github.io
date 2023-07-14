@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Unity Game</title>
+</head>
+<body>
+    <canvas id="unity-canvas" width="960" height="600"></canvas>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("unity-canvas", "Build/YourGame.json");
+    </script>
+</body>
+</html>
