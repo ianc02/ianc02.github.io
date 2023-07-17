@@ -94,8 +94,18 @@ h2{
     display: flex;
     align-items: stretch;
   }
+  .projectsBorder{
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+  }
 
   .aboutBorder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .projectsBorder img {
     height: 100%;
     width: 100%;
     object-fit: cover;

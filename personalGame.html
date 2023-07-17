@@ -5,9 +5,9 @@
 </head>
 <body>
     <canvas id="unity-canvas" width="960" height="600"></canvas>
-    <script src="Build/UnityLoader.js"></script>
+    <script src="projects/PersonalGame/Build/WebGL.loader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("unity-canvas", "Build/YourGame.json");
+        var gameInstance = UnityLoader.instantiate("unity-canvas", "Build/YourGameBuild.json", { dataUrl: "projects/PersonalGame/Build/WebGL.data.br" });
     </script>
 </body>
 </html>
