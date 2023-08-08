@@ -2,7 +2,7 @@
 <html>
     <header>
         <title>Projects</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
     </header>
     <body>
         
@@ -10,52 +10,52 @@
         <div class="allContent">
 
             <div class="projectsBorder left">
-                <img src="images/code.png" alt="Left Image">
+                <img src="../images/house.png" alt="Left Image">
             </div>
             <div class="middleContent">
                 <div class="navbar">
-                    <a href="index.html">Home Page</a>
-                    <a href="about.html">About Me</a>
-                    <a href="resume.html">Resumes</a>
-
+                    <a href="../index.html">Home Page</a>
+                    <a href="../about.html">About Me</a>
+                    <a href="../resume.html">Resumes</a>
+                    <a href="../projects.html">Projects</a>
                     
         
                 </div>
                 <h1>
-                    Add some "PROJECTS" stuff here, Ian!
+                    Add some "Thesis" stuff here, Ian!
                 </h1>
         
                 <div class="projectsContainer">
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="projecthtmls/discoTrayStudios.html" style="font-size: 20px;"><b>Disco Tray Studios</b></a>
+                            <h3>Disco Tray Studios</h3>
                             <p>Disco Tray Studios is an organization started by Professor Mark Goadrich at Hendrix College as a way of employeeing students as a way to gain professional experience and provide free software development to local companies. I worked in the game development side creating educational games to help develop learning in an interactive and engaging way. You can <a href="https://discotraystudios.github.io/" target="_blank">Click Here</a> to learn more about it. On my site you can find the projects I worked on and the (usually) weekly blog we would keep up with regarding progress!</p>
                         </div>
-                        <img src="images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image" id="dtsimg">
+                        <img src="../images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image">
                     </div>
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="projecthtmls/kansas.html" style="font-size: 20px;"><b>Research at Kansas</b></a>
+                            <h3>Research at Kansas</h3>
                             <p>I did an REU (Research Experience for Undergraduates) at the University of Kansas the summer of 2022. There, I worked under the supervision of Professor Ward Thompson and Dr. Ashely Borkowski developing molecular dynamics simulations of trimethylamine N-Oxide (TMAO) and urea in water.</p>
                         </div>
-                        <img src="images/pres.jpg" alt="Kansas Image" id="kansasimg">
+                        <img src="../images/pres.jpg" alt="Kansas Image">
                     </div>
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="projecthtmls/thesis.html" style="font-size: 20px;"><b>Senior Thesis Project</b></a>
+                            <h3>Senior Thesis Project</h3>
                             <p>In my second to last semester of college as a part of the computer science program, we were tasked with a semester long project that would push us as developers. I had been wanting to grow my skills as a game developer in several facets but could never find the time to do so. This project allowed for that time and, although it is still far from complete, the overall game is up and running and available for download.</p>
                         </div>
-                        <img src="images/house.png" alt="Thesis Image" id="thesisimg">
+                        <img src="../images/house.png" alt="Thesis Image">
                     </div>
                 </div>
             </div>
 
             
             <div class="projectsBorder right">
-                <img src="images/chem.jpg" alt="chem Image">
+                <img src="../images/house.png" alt="chem Image">
 
             </div>
         </div>
@@ -84,20 +84,4 @@
             max-width: 30em;
         }
     </style>
-    <script>
-        const dtsimg = document.getElementById("dtsimg");
-        const kansasimg = document.getElementById("kansasimg");
-        const thesisimg = document.getElementById("thesisimg");
-
-
-        dtsimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/discoTrayStudios.html";
-        })
-        kansasimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/kansas.html";
-        })
-        thesisimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/thesis.html";
-        })
-    </script>
 </html>

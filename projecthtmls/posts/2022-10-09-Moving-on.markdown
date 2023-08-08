@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Moving On to Other Projects"
+date: 2022-10-09 1:00
+categories: jekyll update
+---
+  We are officially done with the demo of Career Competencies! Our final push went
+out the other day and on Thursday, we had Professor Seme's explorations class play it.
+I, unfortunately, could not be there but from what I have read in the responses it
+seems like it went well, although I am sure I will get the full rundown of how it
+went on Monday's meeting. Now that we have wrapped that up though, and there is no
+pressing deadline, we have been talking about what we will be working on in the future.
+  Our top three ideas right now are: working on the Windgate Museum art game that we
+have been in talks with Lindsey Knight about; continuing work on @itsmaya and finding
+a new client to take on the project, or begin looking into how we may host the GameJam
+we were planning on doing next semester. After some conversation, I believe Connor
+will be leaving the game dev group for now, and Jonathon and I are both very dialogued
+out so we were leaning more towards the art game. We set up a meeting with Lindsey and
+will be recapping our original ideas and seeing where else this game may move towards,
+and this is happening Wednesday. Right now we are in a bit of a limbo of not much
+work to do, but I am excited to see what comes out of this.

@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Continuing work with Windgate"
+date: 2022-10-19 1:00
+categories: jekyll update
+---
+
+  We have decided to work on the Windgate's game. We set up an initial meeting with 
+Lindsey Knight, and have got some beginning ideas we are still throwing around, along
+with an initial game with a moveable character. I have not done much more work on
+this game, as we had fall break and then I missed the two days after for a wedding.
+During today's meeting, I expect I'll get caught up with what Jonathon has been working on
+and we'll discuss our ideas along with Lindsey's input.
