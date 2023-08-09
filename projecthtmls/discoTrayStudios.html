@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Disco Tray Studios</title>
+        <title>Disco Tray Studios: GO LEARN FRAMEWORK TO MAKE EASIER</title>
         <link href="../style.css" rel="stylesheet">
     </header>
     <body>
@@ -22,7 +22,7 @@
         
                 </div>
                 <h1 style="text-align: center;">
-                    Disco Tray Studios
+                    Disco Tray Studios: GO LEARN FRAMEWORK TO MAKE EASIER (React/Angular)
                 </h1>
                 <h3 class="center_text">
                     Below you can find all the projects I worked on during my time at Disco Tray Studios. Descriptions for each are found along with links directly 
@@ -34,7 +34,7 @@
                         <img class="arrow" src="../images/arrow-right.png">
                         <div class="banner-text">My Projects</div>
                     </div>
-                    <ul id="projects-list" class = "deactive list" >
+                    <ul id="projects-list" class = "deactive list custom-list" >
                         <li class="project-title"style="background-color: #f7b1b1;">
                             Cultivating Competencies
                             <div class="project-info deactive list" style="background-color: #f0f0f0;">
@@ -156,7 +156,7 @@
                         <img class="arrow" src="../images/arrow-right.png">
                         <div class="banner-text">My Posts</div>
                     </div>
-                    <ul id="post-list" class="deactive list">
+                    <ul id="post-list" class="deactive list custom-list">
                         <li class="post-title">"My First Progress Post!"</li>
                         <li class="post-title">"Update on Unity games"</li>
                         <li class="post-title">"Progress on Astronomical Bodies"</li>
@@ -212,6 +212,20 @@
         
     </body>
     <style>
+        ul.custom-list {
+            list-style: none;
+            padding: 0;
+        }
+        ul.custom-list li {
+            background-image: url('../images/arrow-right.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
         .center_text{
             text-align: center;
             max-width: 40em;
@@ -281,7 +295,7 @@
 
         }
         .project-info{
-
+            
         }
         #post-list.visible{
             max-height: 300px;
@@ -356,32 +370,51 @@
         let lastClicked;
         let posts_c_clicked = false;
 
-        function bannerInteraction(banner){
-            const parentContainer = banner.parentNode;
+        function bannerInteraction(info, grandchild){
+            const parentContainer = info.parentNode;
             const bannerList = parentContainer.querySelector(".list");
+            let parentBannerList = null;
+            // if (grandchild){
+            //     parentBannerList = parentContainer.parentContainer.querySelector(".list");
+            // }
             bannerList.classList.remove("deactive");
             bannerList.classList.toggle("visible");
-            const arrow = banner.querySelector(".arrow");
+            let arrow;
+            if  (info.querySelector(".arrow") !== null) {
+                arrow = info.querySelector('.arrow');
+            }
             if (bannerList.classList.contains("visible")){
+                
                 bannerList.style.maxHeight = (bannerList.scrollHeight) + "px";
-                arrow.style.transform = 'rotate(90deg)';
+                // if (parentBannerList){
+                //     parentBannerList.style.maxHeight = (parentBannerList.style.maxHeight + bannerList.scrollHeight) + 'px';
+                // }
+                if  (info.querySelector(".arrow") !== null) {
+                    arrow.style.transform = 'rotate(90deg)';
+                 }
             }
             else{
+                // if (parentBannerList){
+                //     parentBannerList.style.maxHeight = (parentBannerList.style.maxHeight + bannerList.scrollHeight) + 'px';
+                // }
                 bannerList.style.maxHeight = '0px';
-                arrow.style.transform = 'rotate(0deg)';
+                if  (info.querySelector(".arrow") !== null) {
+                    arrow.style.transform = 'rotate(0deg)';
+                 }
+                
                 setTimeout(() => {
                     bannerList.classList.add("deactive");
                 }, 980);
             }
         }
-        banners.forEach((banner) => {
+        banners.forEach((banner,) => {
             banner.addEventListener('click', (event) => {
-                bannerInteraction(event.currentTarget);
+                bannerInteraction(event.currentTarget, false);
             });
         });
         proj_titles.forEach((pInfo) => {
             pInfo.addEventListener('click', (event) => {
-                bannerInteraction(event.currentTarget);
+                bannerInteraction(event.currentTarget, true);
             });
         });
 
