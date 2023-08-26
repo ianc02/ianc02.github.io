@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Projects</title>
+        <title>Research</title>
         <link href="../style.css" rel="stylesheet">
     </header>
     <body>
@@ -22,47 +22,36 @@
         
                 </div>
                 <h1>
-                    Add some "Kansas" stuff here, Ian!
+                    Structure-Making and Breaking:
+                    Structure and Dynamics of Urea
+                    and TMAO in Water
                 </h1>
 
                 <h3 class="center_text" style="margin-bottom: 15px;">
                     I spent my 2022 summer at the University of Kansas REU (Research Experience of Undergraduates) program in Lawrence. I had applied to a few different REU's 
                     (Madison made me, and I'm glad she did) and was accepted to both KU and Kansas State. I opted for KU and did some incredible research. I was very lucky to be 
-                    placed with the Thompson group, an incredibly smart, inclusive, and caring group, with Ashley Borkowski as my mentor. When I arrived at KU, I had never touched 
-                    computational chemistry, and had only done a semester of thermodynamics. A lot of Ashleys research at the time was focused on water movement in Molecular Dynamics 
+                    placed with the Thompson group, an incredibly smart, inclusive, and caring group, with Ashley Borkowski as my mentor.
+                    
+                </h3>
+                <p class="info">
+                    When I arrived at KU, I had never touched 
+                    computational chemistry, and had only done a semester of thermodynamics. A lot of Ashley's research at the time was focused on water movement in Molecular Dynamics 
                     Simulations (MDS) while my background was more biochemistry focused. Her and Dr. Thompson were able to find a great bridge between our interests and we started 
                     working on how osmolytes effect water dynamics. Out of the ten week program, the first two weeks was just reading and research. Learning everything I could about 
                     these dynamical systems and papers with many differing theories as to why these phenomena take place. It was a lot. Over the next eight weeks though I was able to 
-                    simulate interactions between the osmolytes and water and gather structural, thermodynamic, and dynamical data into a consice and (relativley) finished project that 
-                    I presented on at the 2023 national ACS meeting as well as helped with data curation for a paper published (link here).
-                </h3>
-        
-                <div class="projectsContainer">
-
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Disco Tray Studios</h3>
-                            <p>Disco Tray Studios is an organization started by Professor Mark Goadrich at Hendrix College as a way of employeeing students as a way to gain professional experience and provide free software development to local companies. I worked in the game development side creating educational games to help develop learning in an interactive and engaging way. You can <a href="https://discotraystudios.github.io/" target="_blank">Click Here</a> to learn more about it. On my site you can find the projects I worked on and the (usually) weekly blog we would keep up with regarding progress!</p>
-                        </div>
-                        <img src="../images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image">
-                    </div>
-
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Research at Kansas</h3>
-                            <p>I did an REU (Research Experience for Undergraduates) at the University of Kansas the summer of 2022. There, I worked under the supervision of Professor Ward Thompson and Dr. Ashely Borkowski developing molecular dynamics simulations of trimethylamine N-Oxide (TMAO) and urea in water.</p>
-                        </div>
-                        <img src="../images/pres.jpg" alt="Kansas Image">
-                    </div>
-
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Senior Thesis Project</h3>
-                            <p>In my second to last semester of college as a part of the computer science program, we were tasked with a semester long project that would push us as developers. I had been wanting to grow my skills as a game developer in several facets but could never find the time to do so. This project allowed for that time and, although it is still far from complete, the overall game is up and running and available for download.</p>
-                        </div>
-                        <img src="../images/house.png" alt="Thesis Image">
-                    </div>
+                    simulate interactions between the osmolytes and water and gather structural, thermodynamic, and dynamical data into a concise and (relatively) finished project that 
+                    I presented on at the 2023 national ACS meeting as well as helped with data curation for a paper published (Borkowski, A.K., Campbell, N.I. and Thompson, W.H. (2023) ‘Direct calculation of the temperature dependence of 2D-IR spectra: Urea in water’, <i>The Journal of Chemical Physics</i>, 158(6). doi:10.1063/5.0135627. ). Below, you can find the paper I wrote 
+                    for my BCMB Senior Capstone paper that contains all the information about my research there.
+                </p>
+                <div class="pdf-container">
+                    <object id="pdfDisplayer"  data="../pdfs/BCMB_SS_THESIS.pdf" type="application/pdf"  height="800px">
+                        <p>Unable to Display PDF file. <a href="../pdfs/BCMB_SS_THESIS.pdf">Download</a> instead</p>
+                    </object>
                 </div>
+                <p class="info">
+                    Stuff to add later!
+                </p>
+                
             </div>
 
             
@@ -73,10 +62,12 @@
         </div>
         
     </body>
-    <footer>
-        <p>Chemistry Image by <a href="https://www.freepik.com/free-vector/hand-drawn-chemistry-background-blackboard_4459170.htm#query=chemistry%20pattern&position=39&from_view=search&track=ais">Freepik</a></p>
-    </footer>
     <style>
+        .info{
+            padding: 5px;
+            margin: 10px;
+            background-color: rgb(255,238,225);
+        }
         .projectsContainer{
             background-color: azure;
         }
@@ -100,6 +91,16 @@
             max-width: 50em;
             margin: 0 auto;
             word-wrap: break-word;
+        }
+        #pdfDisplayer{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .pdf-container {
+            margin: 50px;
         }
     </style>
 </html>

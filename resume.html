@@ -25,8 +25,9 @@
                     </button>
                 </div>
             </div>
-            <object id="pdfDisplayer"  data="images/Compsci Resume.pdf" type="application/pdf"  height="800px">
-                <p>Unable to Display PDF file. <a href="images/Biochem Resume.pdf">Download</a> instead</p>
+            <object id="pdfDisplayer"  data="pdfs/Compsci Resume.pdf" type="application/pdf"  height="800px">
+                <p>Unable to Display PDF file. <a href="pdfs/Biochem Resume.pdf">Download</a> instead</p>
+            </object>
         </div>
 
         
@@ -84,12 +85,13 @@
     <script>
         const CSRButton = document.querySelector("#CSRButton");
         const BCRButton = document.querySelector("#BCRButton");
+        const BCPButton = document.querySelector("#BCPButton");
         const pdfDisplayer = document.querySelector("#pdfDisplayer")
         CSRButton.addEventListener('click', () =>{
-            pdfDisplayer.data = "images/Compsci Resume.pdf";
+            pdfDisplayer.data = "pdfs/Compsci Resume.pdf";
         })
         BCRButton.addEventListener('click', () =>{
-            pdfDisplayer.data = "images/Biochem Resume.pdf";
+            pdfDisplayer.data = "pdfs/Biochem Resume.pdf";
         })
     </script>
         

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Projects</title>
+        <link href="../style.css" rel="stylesheet">
+    </header>
+    <body>
+        
+
+        <div class="allContent">
+
+            <div class="projectsBorder left">
+                <img src="../images/code.png" alt="Left Image">
+            </div>
+            <div class="middleContent">
+                <div class="navbar">
+                    <a href="index.html">Home Page</a>
+                    <a href="about.html">About Me</a>
+                    <a href="resume.html">Resumes</a>
+
+                    
+        
+                </div>
+                <h1>
+                    Add some "CS PROJECTS" stuff here, Ian!
+                </h1>
+        
+                <div class="projectsContainer">
+
+                    <div class="project">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/FinalProjectCSCI150" target="_blank" style="font-size: 20px; "><b>The Cycle (ASCII)</b></a>
+                            <p>
+                                This project was my COVID baby. After we all got kicked off campus in March of 2020, we were given our final project assignment in my 
+                                introductory computer science course. I was stuck in the house all day and poured so much time into this project. I was getting into 
+                                <a href="https://adarkroom.doublespeakgames.com/" target="_blank">A Dark Room</a> again (if you haven't played it I cannot recommend it enough. 
+                                It's on mobile too!) and decided I wanted to do something similar for my project. The premise of the game, if you're unfamiliar, is that the player 
+                                explores a top-down ASCII world gathering resources and growing their strength to explore more while unraveling an underlying storyline. I tried to 
+                                incorporate a lot of that into mine. If you'd like to give it a try, you can <a href="https://github.com/ianc02/FinalProjectCSCI150" target="_blank">download the files here!</a>
+                            </p>
+                            <p>
+                                Since at this point, I had about four months of coding experience and it all in Python, my options were limited. I started by designing a map for 
+                                the player to explore and then using print() statements to load in the world at each step. It looks janky, but it worked enough! Getting interactions 
+                                between the player and the world wasn't difficult since everything is stored in a 2D array, I could just check player position against the map and 
+                                all player input was text-based. The most-confusing part was battles between the player and enemies. I wanted to have it more like A Dark Room with 
+                                options and buttons for the player to press but I remember that interfering with player movement and I couldn't figure it out, so I ended up just having 
+                                an auto-battler. 
+                            </p>
+                        </div>
+                        <img src="../images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image" id="dtsimg" style="padding-right: 20px;">
+                    </div>
+
+                    <div class="project">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/LobsterFinal" target="_blank" style="font-size: 20px; "><b>No More Lobsters!</b></a>
+                            <p>
+                                The next semester, I was in a data management course that utilized python to visualize and manipulate data in different ways using libraries like Pandas, Mesa, and NumPy. 
+                                If you've ever had the pleasure of looking for online local data libraries to use, its not easy to find interesting ones. That being said, I got some cool data. My partner on 
+                                the project and I came across lobster migration data. The data stated that mean lobster location is moving north (about 4.3 miles a year) due to increase in ocean waters, which is causing 
+                                problems for fishermen in Maine as they get closer to Canadian waters and lose jurisdiction. We used Monte-Carlo simulations, choropleths, and agent-based modeling to predict 
+                                when lobsters may move too far away to be realistically fished. This was a great project to me because it was the first time I had to incorporate a lot of techniques that I 
+                                had been learning all semester. <a href="https://github.com/ianc02/LobsterFinal" target="_blank">Here are some of the files</a>, but more should be up soon!
+                            </p>
+                        </div>
+                        <img src="../images/pres.jpg" alt="Kansas Image" id="kansasimg">
+                    </div>
+
+                    <div class="project">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Minesweeper</b></a>
+                            <p>
+                                In my data structures course, we were learning Java and our first project was coming up. We were still online due to COVID so I had a lot of time to spend towards this. 
+                                We needed to do something with a 2D array I believe, and for some reason Minesweeper was what I wanted to make. So the first step in making a minesweeper game, as it turns out, 
+                                is knowing how to play minesweeper. First I learned how to play minesweeper (This was a mistake, I have a debilitating addiction to it that survives to this day). Then I got 
+                                started on creating the board. This was a ton of fun as I had accidentally started using recursion without even realizing it. When a player selects a cell, if there are no bombs 
+                                around it then it also opens up every cell around it. Additionally, every cell that is opened that also does not have a neighboring bomb does the same, and the method I made did 
+                                the same. This is super obvious but at the time it blew my shit away how a core concept of the game can be coded so easily. Beyond that, the game is pretty simple and to be honest, 
+                                not good. I plan on making a web-version as well at some point and some things to improve upon is instead of creating the map when the game starts, I need to create it on players 
+                                first selection to make sure that they don't get a bomb on their first click, much like the Google version. The GUI version was a bit better since it kept track of how many flags 
+                                should be placed, had a time, and players could just click instead of type in coordinates! Feel free to <a href="https://github.com/ianc02/Minesweeper" target="_blank">download the files here!</a>
+                                                        
+                            </p>
+                        </div>
+                        <img src="../images/house.png" alt="Thesis Image" id="thesisimg">
+                    </div>
+                    <div class="project">
+                        <div class="projectText">
+                            <h3>Algorithms!</h3>
+                            <p>
+                                Dynamic programming with loose justification: 
+                                <pre>
+                                    <code>
+main_dictionary = {}
+opt_words = {}
+breaks = {}
+main_dictionary[0] = 0
+dp = {}
+
+
+def length(line):
+    sums = 0
+    for i in line:
+        sums += len(i) + 1
+    return sums
+
+
+def just_helper(max_length, txt):
+    if len(txt) == 0:
+        return 0
+    line = [txt[-1]]
+    sums = {}
+    temp = {}
+    while length(line) - 1 <= max_length:
+        current = (max_length - length(line) + 1) ** 2
+        if (len(txt), len(line)) not in dp:
+            dp[(len(txt), len(line))] = just_helper(max_length, txt[:len(txt) - len(line)])
+        sums[len(line)] = current + dp[(len(txt), len(line))]
+        temp[sums[len(line)]] = line.copy()
+        if len(line) < len(txt):
+            line.append(txt[-(len(line) + 1)])
+        else:
+            break
+
+    main_dictionary[len(txt)] = min(sums.values())
+    opt_words[len(txt)] = temp[main_dictionary[len(txt)]]
+    return main_dictionary[len(txt)]
+
+
+def justify(max_length, file):
+    whole_text = ""
+    f = open(file, 'r')
+    f = f.read().split()
+    just_helper(max_length, f)
+    txt = []
+    for i in range(len(f)):
+        dp[0, i] = 0
+    if len(f) in main_dictionary:
+        count = len(f)
+        while count > 0:
+            line = ""
+            for i in reversed(opt_words[count]):
+                line += i + " "
+            txt.append(line)
+            count -= len(opt_words[count])
+
+    for i in reversed(txt):
+        whole_text += (i[:len(i) - 1]) + "\n"
+
+    whole_text += "\n"
+    whole_text += "Cost: " + str(main_dictionary[len(f)])
+    new_file = open(f"neruda.{max_length}.Ian.out", 'w')
+    new_file.write(whole_text)
+
+
+dict = {}
+sums = []
+                                    </code>
+                                </pre>
+                            </p>
+                        </div>
+                        <img src="../images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image" id="dtsimg" style="padding-right: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="projectsBorder right">
+                <img src="../images/chem.jpg" alt="chem Image">
+
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>Chemistry Image by <a href="https://www.freepik.com/free-vector/hand-drawn-chemistry-background-blackboard_4459170.htm#query=chemistry%20pattern&position=39&from_view=search&track=ais">Freepik</a></p>
+    </footer>
+    <style>
+        .projectsContainer{
+            background-color: azure;
+        }
+        .project {
+            display: inline-block;
+            padding-left: 21%;
+            margin-top: 10px;
+            display: inline-flex;
+        }
+
+        .project img {
+            width: 300px;
+            height: 200px;
+            padding-left: 50px;
+        }
+        .projectText{
+            max-width: 30em;
+        }
+    </style>
+    <script>
+        const dtsimg = document.getElementById("dtsimg");
+        const kansasimg = document.getElementById("kansasimg");
+        const thesisimg = document.getElementById("thesisimg");
+
+
+        dtsimg.addEventListener("click", ()=>{
+            window.location.href = "projecthtmls/discoTrayStudios.html";
+        })
+        kansasimg.addEventListener("click", ()=>{
+            window.location.href = "projecthtmls/kansas.html";
+        })
+        thesisimg.addEventListener("click", ()=>{
+            window.location.href = "projecthtmls/thesis.html";
+        })
+    </script>
+</html>

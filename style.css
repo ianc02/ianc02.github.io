@@ -94,39 +94,46 @@ h2{
     display: flex;
     align-items: stretch;
   }
-  .projectsBorder{
-    flex: 1;
-    display: flex;
-    align-items: stretch;
-  }
-
   .aboutBorder img{
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  .projectsBorder img {
+  .allContent {
+    display: flex;
+    align-items: stretch;
+}
+
+.projectsBorder {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 12.5%;
+    overflow: hidden;
+}
+
+.projectsBorder img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
+}
 
-  .left{
+.left {
+    left: 0;
     order: 0;
-  }
-  .middleContent{
+}
+
+.middleContent {
     flex: 7;
     order: 1;
-  }
-  .right{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.right {
+    right: 0;
     order: 2;
-  }
-  
-  .allContent{
-    display: flex;
-    height: 100%;
-    width: 100%;
-  }
+}
 
   
 

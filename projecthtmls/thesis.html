@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Projects</title>
+        <title>The Cycle</title>
         <link href="../style.css" rel="stylesheet">
     </header>
     <body>
@@ -19,38 +19,58 @@
                     <a href="../resume.html">Resumes</a>
                     <a href="../projects.html">Projects</a>
                     
-        
+                    
                 </div>
                 <h1>
-                    Add some "Thesis" stuff here, Ian!
+                    Computer Science Senior Project
                 </h1>
-        
-                <div class="projectsContainer">
 
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Disco Tray Studios</h3>
-                            <p>Disco Tray Studios is an organization started by Professor Mark Goadrich at Hendrix College as a way of employeeing students as a way to gain professional experience and provide free software development to local companies. I worked in the game development side creating educational games to help develop learning in an interactive and engaging way. You can <a href="https://discotraystudios.github.io/" target="_blank">Click Here</a> to learn more about it. On my site you can find the projects I worked on and the (usually) weekly blog we would keep up with regarding progress!</p>
-                        </div>
-                        <img src="../images/DiscoTray_logo_bling-2.png" alt="Disco Tray Image">
-                    </div>
-
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Research at Kansas</h3>
-                            <p>I did an REU (Research Experience for Undergraduates) at the University of Kansas the summer of 2022. There, I worked under the supervision of Professor Ward Thompson and Dr. Ashely Borkowski developing molecular dynamics simulations of trimethylamine N-Oxide (TMAO) and urea in water.</p>
-                        </div>
-                        <img src="../images/pres.jpg" alt="Kansas Image">
-                    </div>
-
-                    <div class="project">
-                        <div class="projectText">
-                            <h3>Senior Thesis Project</h3>
-                            <p>In my second to last semester of college as a part of the computer science program, we were tasked with a semester long project that would push us as developers. I had been wanting to grow my skills as a game developer in several facets but could never find the time to do so. This project allowed for that time and, although it is still far from complete, the overall game is up and running and available for download.</p>
-                        </div>
-                        <img src="../images/house.png" alt="Thesis Image">
-                    </div>
+                <h3 class="center_text" style="margin-bottom: 15px;">
+                    In my second to last semester at college, I had my Computer Science Senior Seminar class. As a part of the course, we took part in a semester long project. 
+                    For mine, I decided to create a metroidvania adventure game that took inspiration from one of the first projects I ever made. My goal was to further my skills as 
+                    game developer and create a full game from nothing. If you are interested in playing it, feel free to <a href="https://ion02.itch.io/senior-sem-projec", target="_blank">download it here</a>!
+                    
+                </h3>
+                <p class="info">
+                    A lot of my journey, thought process, and issues are talked about in the paper below. I'll fill in some missing information here though. Let me preface this by saying 
+                    that life caught up to me during that semester and it was difficult to find the time to properly give to this game. I loved working on it and seeing its growth, but it 
+                    was difficult to justify spending time on it when so much more was due earlier. A good amount (like probably at least half) of the work went into it in the final week 
+                    of the semester (and around 80% of that in the last three days). Because of this, I didn't reach many of my goals that I had set out to do, such as creating a majority of the assets myself or creating an adaptable AI 
+                    for the enemies and NPCs. Regardless, the effort that went into this and the product that came out are something I am proud of.
+                </p>
+                <p class="info">
+                    One of the things I wanted to touch more on in the paper but couldn't find the time to was the amount of illusion that goes into game development. There is a section 
+                    titled "Lies, Lies, and More Lies" that speaks on this, but some other instances that didn't make it into the paper is how the water is just a plane with a texture on 
+                    top but I had a problem with the fact that planes are only visible on one side. Best solution was to just make a second water plane and flip it upside down. This isn't 
+                    about my game, but my favorite instance of this comes from Outer Wilds (best game ever, go play it). It's a game about a solar system traveler on a journey of exploration 
+                    with an incredible physics system and the hardest to control ship (all good things) but apparently they had issues with moving the player around in the beginning with I 
+                    believe collisions and glitches and all sorts of problems and so their solution was instead of moving the player character forward when the player presses forward, the 
+                    developers instead have the entire solar system, besides the player character, move in the opposite direction. 
+                </p>
+                <p class="info">
+                    In the beginning of those last three days, I wrote every single thing that I felt like I had to implement into the game before it would feel complete. There were two 
+                    full pages of bullet points of things to do. Some were simple like "fix this UI error" while others were just "make NPC AI better" and over those three days I would 
+                    tackle problem after problem, adding on more and more as errors would pop up. It was hell and it was exhilarating. I would wake up at around 9am and work on it until 
+                    around 5am. It was a blast seeing how fast I could work through problems and add features and change things to make the game more exciting or look better and it was 
+                    awful when one minor thing would take up hours of my time (looking at you, sound effects). In the end though, with literally no time to spare I got almost everything 
+                    I wanted to add. With only 30 minutes I managed to record gameplay (found down below), make my presentation, shower, and sprint to the lecture room for our final period.
+                </p>
+                <div class="pdf-container">
+                    <object id="pdfDisplayer"  data="../pdfs/CS_SS_THESIS.pdf" type="application/pdf"  height="800px">
+                        <p>Unable to Display PDF file. <a href="../pdfs/CS_SS_THESIS.pdf">Download</a> instead</p>
+                    </object>
                 </div>
+                <p class="info">
+                    Heres a quick video that displays some of the important aspects of the game! If you are interested in playing it, feel free to <a href="https://ion02.itch.io/senior-sem-projec", target="_blank">download it here</a>!
+                </p>
+                <div style="display: grid;  place-items: center;margin-bottom: 50px;">
+                    <video width="70%" height="auto" controls >
+                        <source src="../videos/Sen Sem video.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video>
+                </div>
+                
+                
             </div>
 
             
@@ -61,10 +81,12 @@
         </div>
         
     </body>
-    <footer>
-        <p>Chemistry Image by <a href="https://www.freepik.com/free-vector/hand-drawn-chemistry-background-blackboard_4459170.htm#query=chemistry%20pattern&position=39&from_view=search&track=ais">Freepik</a></p>
-    </footer>
     <style>
+        .info{
+            padding: 5px;
+            margin: 10px;
+            background-color: rgb(255,238,225);
+        }
         .projectsContainer{
             background-color: azure;
         }
@@ -82,6 +104,22 @@
         }
         .projectText{
             max-width: 30em;
+        }
+        .center_text{
+            text-align: center;
+            max-width: 50em;
+            margin: 0 auto;
+            word-wrap: break-word;
+        }
+        #pdfDisplayer{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .pdf-container {
+            margin: 50px;
         }
     </style>
 </html>
