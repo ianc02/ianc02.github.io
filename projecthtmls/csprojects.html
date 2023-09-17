@@ -17,6 +17,7 @@
                     <a href="../index.html">Home Page</a>
                     <a href="../about.html">About Me</a>
                     <a href="../resume.html">Resumes</a>
+                    <a href="../projects.html">Projects</a>
 
                     
         
@@ -24,7 +25,18 @@
                 <h1>
                     Computer Science Projects
                 </h1>
+                <h3 class="center_text" style="margin-bottom: 15px;">
+                    Here are some of the projects and things I had done as a Computer Science student! This is  not even close to a complete list but hold roughly my favorite 
+                    (or most difficult) project from each class I had. It goes in chronological order so you can see my development over time! I don't have everything up right now, but 
+                    the sections are complete. 
+                </h3>
         
+                <div class="overlay">
+                    <div class="preview-container">
+                        <span class="close-btn">&times;</span>
+                        <img src="" alt="Preview Image" class="preview-image">
+                    </div>
+                </div>
                 <div class="projectsContainer">
 
                     <div class="project">
@@ -47,7 +59,11 @@
                                 an auto-battler. 
                             </p>
                         </div>
-                        <img src="../images/csprojects/Map.png" alt="The Cycle Map" id="dtsimg" style="padding-right: 20px;">
+                        
+                        <div class= "image-container">
+                            <img src="../images/csprojects/Map.png" alt="The Cycle Map" class="thumbnail">
+                        </div>
+                        
                     </div>
 
                     <div class="project">
@@ -59,10 +75,11 @@
                                 the project and I came across lobster migration data. The data stated that mean lobster location is moving north (about 4.3 miles a year) due to increase in ocean waters, which is causing 
                                 problems for fishermen in Maine as they get closer to Canadian waters and lose jurisdiction. We used Monte-Carlo simulations, choropleths, and agent-based modeling to predict 
                                 when lobsters may move too far away to be realistically fished. This was a great project to me because it was the first time I had to incorporate a lot of techniques that I 
-                                had been learning all semester. <a href="https://github.com/ianc02/LobsterFinal" target="_blank">Here are some of the files</a>, but more should be up soon!
+                                had been learning all semester. <a href="https://github.com/ianc02/LobsterFinal" target="_blank">Here are some of the files</a>, but more should be up soon! There have been some updates in 
+                                the codebase I used, so it isn't working at the moment. I'll update it once I find the time.
                             </p>
                         </div>
-                        <img src="../images/psres.jpg" alt="Lobster Choropleth" id="kansasimg">
+                        <img src="../images/psres.jpg" alt="Lobster Choropleth Needed" >
                     </div>
 
                     <div class="project">
@@ -81,16 +98,22 @@
                                                         
                             </p>
                         </div>
-                        <img src="../images/csprojects/textminesweeper.png" alt="Text-Based Minesweeper" id="thesisimg">
-                        <img src="../images/csprojects/boardminesweeper.png" alt="GUI Minesweeper" id="thesisimg">
-                        <img src="../images/csprojects/failminesweeper.png" alt="GUI fail Minesweeper" id="thesisimg">
+                        <div class="image-container" >
+                            <img src="../images/csprojects/textminesweeper.png" alt="Text-Based Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/boardminesweeper.png" alt="GUI Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/failminesweeper.png" alt="GUI fail Minesweeper" class="thumbnail">
+                        </div>
+                        
                     </div>
                     <div class="project">
                         <div class="projectText">
                             <h3>Algorithms!</h3>
                             <p>
-                                Dynamic programming with loose justification: 
-                                <pre>
+                                I don't have a ton of great coding examples from my coding class, but one of my favorite (but at first most hated) topic was dynamic programming. One of 
+                                our assignments was to work on loose justification, the thing that makes all of your lines on the right side mostly line up so it isn't super jagged. This is a 
+                                basic version of that written in Python, in which it only cares about empty space being given and aligns the words appropriately. Some versions (like in LateX) will give you a 
+                                perfect alignment due to minor changes like specific letter font changes and spacing between letters. 
+                                <pre style="background-color: lightgray; padding: 10px; border-radius: 5px; overflow: auto;">
                                     <code>
 main_dictionary = {}
 opt_words = {}
@@ -160,7 +183,57 @@ sums = []
                                 </pre>
                             </p>
                         </div>
-                        <img src="../images/DiscossTray_logo_bling-2.png" alt="Algorithms Picture" id="dtsimg" style="padding-right: 20px;">
+                        <img src="../images/DiscossTray_logo_bling-2.png" alt="Algorithms Picture Needed" id="dtsimg" style="padding-right: 20px;">
+                    </div>
+
+                    <div class="project">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Artificial Intelligence!</b></a>
+                            <p>
+                                I took Artificial Intelligence the semester after algorithms. There were a lot of fun projects in there, and nothing that super stood out so heres a lot! It was a really fun and interesting class that took a lot of concepts from algorithms and made 
+                                them very apparent. We explored many different facets of AI in this course, both different types and the morality behind it. The entirety of all projects are 
+                                <a href="https://github.com/ianc02/CSCI335" target="_blank">available on my Github here</a>. Most everything is written in Java and utilizes a GUI. We explored 
+                                simple AI's such as a BFS maze solver, AlphaBeta checkers player, and a Q-learning robot; as well as more complex systems like neural networks, decision trees/forests, 
+                                and Markov chains for language, sentiment, and handwriting learners. It was an awesome course and opened up my perspective on how AI is utilized, implemented, and most 
+                                importantly saved from itself both in space/time complexity and it just trying to do all the wrong things. 
+                            </p>
+                        </div>
+                        <div class="image-container" >
+                            <img src="../images/csprojects/Checkers.png" alt="Text-Based Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/btsmaze.png" alt="GUI Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/robo.png" alt="GUI fail Minesweeper" class="thumbnail">
+                        </div>
+                    </div>
+
+                    <div class="project" style="padding-bottom: 200px;">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Operating Systems</b></a>
+                            <p>
+                                This class was both the easiest and hardest class in my life. It was truly an unforgettable experience. The class was split into three main sections, and 
+                                it started out simple enough with the command line and TCP sockets. The culmination of those two sections was that we created our own virtual command prompts and servers 
+                                that we flooded with locusts to test the stability of (with some fun additional features like caching and IP remembrance). The last section dealing with the Kernel was something else 
+                                entirely. It had three main projects, and the first was both fun and easy! Connor and I got to work on it together (technically the only project we ever worked on 
+                                together our entire time at Hendrix) and we made a 2 player version of Tron with Snake features (like eating fruit to grow length). Instead of normal Rust, we had 
+                                to use bare-metal Rust, which basically means without an operating system or the standard library. Besides not having access to mutable arrays and handling interrupts, it wasn't too different.
+                                Then everything changed when the File System attacked. The whole concept was creating a virtual RAM Disk to read and write from. Easy right? No. We had to create the blocks 
+                                in the disk, appropriate correct informative data into them, and update them with test data with inodes. It was so confusing thinking in terms of unconnected blocks and switching 
+                                between thinking in bits and bytes. I truly don't know how we ever got it done. Then, for the last project, we got to great SWIM (Simple Windowing Machine). I have mixed feelings about this one 
+                                because although it took as long as the File System to make (like 30-50 hours idk I lost count) I actually had a lot of fun working on it (unlike the File System). The pictures below 
+                                show it, and although there were many issues and small problems we also got it done. It was a bit easier as most of it was VGA buffer designing, File System bug fixes (yes, it haunted us beyond), and creating 
+                                Heap/Garbage Collector, and a Process manager. The windowing was a little confusing at times because I set it up differently than what Dr. Ferrer planned for (which made it easier in the 
+                                beginning, and way more confusing in the later stages) by having each window be a struct. The File System incorporation was awful because I didn't actually make the FS completely correct 
+                                even though it passed all the tests, so I had to tweak some of the parameters of the SWIM to match the values given in the FS project. Then incorporating it actually needed permission 
+                                to access some of Dr. Ferrers repositories which took so long to get set up (this was actually hilarious because at this point the project was already a week and a half late, but I was the 
+                                first person to get to this point). The garbage collector was actually really easy (relatively) since it only took me a day. Then the process manager introduced a lot of bugs but luckily 
+                                we only had to make a round-robin manager and nothing with a priority queue. After everything was done it was just a shit ton of testing and fixing of bugs (which was how we found out 
+                                that Rust wouldn't support the requirements needed for four windows, so only the first three actually work) and we finally got it done! It was hell but a creating a VERY small operating system was a great sendoff and final project. 
+                                It is also probably the best culmination of everything we had done in the course, although it didn't have any of the server stuff it had a lot of multi-threading and process handling. Anyway, 
+                                give it a try if you'd like. Anyway here's a video. Thank you for reading all of this and learning more about what I've done!
+                            </p>
+                        </div>
+                        <div class="image-container" >
+                            <iframe width="840" height="473" src="https://www.youtube.com/embed/jqR5kjxsA34?si=7tpcXrMPPhuKaUBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,12 +252,16 @@ sums = []
     <style>
         .projectsContainer{
             background-color: azure;
+            display: block;
+            
         }
         .project {
-            display: inline-block;
-            padding-left: 21%;
+            align-items: center;
+            justify-content: center;
             margin-top: 10px;
+            width: 100%;
             display: inline-flex;
+            flex-direction: column;
         }
 
         .project img {
@@ -193,23 +270,98 @@ sums = []
             padding-left: 50px;
         }
         .projectText{
-            max-width: 30em;
+            white-space: normal; /* Allow text to wrap onto multiple lines */
+            word-wrap: break-word; /* Break long words and wrap text when needed */
+            overflow: auto;
+            padding: 10px 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
+            justify-content: center; /* Center align the images horizontally */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ensure images don't exceed the container width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 5px; /* Add some spacing between images */
+            padding: 5px 10px;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 9999;
+        }
+        .preview-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 60%;
+        }
+        .preview-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid white;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 35px;
+            columns: white;
+            cursor: pointer;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .center_text{
+            text-align: center;
+            max-width: 50em;
+            margin: 0 auto;
+            word-wrap: break-word;
         }
     </style>
     <script>
         const dtsimg = document.getElementById("dtsimg");
         const kansasimg = document.getElementById("kansasimg");
         const thesisimg = document.getElementById("thesisimg");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        const overlay = document.querySelector(".overlay");
+        const previewImage = document.querySelector(".preview-image");
+        const closeBtn = document.querySelector(".close-btn");
+        
+
+        thumbnails.forEach(thumb =>{
+            thumb.addEventListener('click', ()=>{
+                if (event.target.classList.contains("thumbnail") ){
+                    event.stopPropagation();
+                    
+                    previewImage.src = event.target.src;
+                    overlay.style.display = "block";
+         
+                }
+                else{
+                    infoInteraction(event.currentTarget, true);
+                }
+            })
+        })
+        closeBtn.addEventListener('click', ()=>{
+            overlay.style.display = "none";
+        })
+        overlay.addEventListener("click", (event) =>{
+            if (event.target === overlay){
+                overlay.style.display = "none";
+            }
+        })
 
 
-        dtsimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/discoTrayStudios.html";
-        })
-        kansasimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/kansas.html";
-        })
-        thesisimg.addEventListener("click", ()=>{
-            window.location.href = "projecthtmls/thesis.html";
-        })
+       
     </script>
 </html>
