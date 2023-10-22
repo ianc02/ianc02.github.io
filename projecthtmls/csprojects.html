@@ -57,7 +57,7 @@
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/FinalProjectCSCI150" target="_blank" style="font-size: 20px; "><b>The Cycle (ASCII)</b></a>
+                            <a href="https://github.com/ianc02/FinalProjectCSCI150" target="_blank" style="font-size: 20px; "><b>The Cycle (ASCII) (Second Semester)</b></a>
                             <p>
                                 This project was my COVID baby. After we all got kicked off campus in March of 2020, we were given our final project assignment in my 
                                 introductory computer science course. I was stuck in the house all day and poured so much time into this project. I was getting into 
@@ -84,7 +84,7 @@
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/LobsterFinal" target="_blank" style="font-size: 20px; "><b>No More Lobsters!</b></a>
+                            <a href="https://github.com/ianc02/LobsterFinal" target="_blank" style="font-size: 20px; "><b>No More Lobsters! (Third Semester)</b></a>
                             <p>
                                 The next semester, I was in a data management course that utilized python to visualize and manipulate data in different ways using libraries like Pandas, Mesa, and NumPy. 
                                 If you've ever had the pleasure of looking for online local data libraries to use, its not easy to find interesting ones. That being said, I got some cool data. My partner on 
@@ -112,7 +112,7 @@
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Minesweeper</b></a>
+                            <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Minesweeper (Third Semester)</b></a>
                             <p>
                                 In my data structures course, we were learning Java and our first project was coming up. We were still online due to COVID so I had a lot of time to spend towards this. 
                                 We needed to do something with a 2D array I believe, and for some reason Minesweeper was what I wanted to make. So the first step in making a minesweeper game, as it turns out, 
@@ -135,30 +135,56 @@
                     </div>
                     <div class="project">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Robotics</b></a>
+                            <h3><b>Robotics (Fourth Semester)</b></h3>
                             <p>
-                                In my data structures course, we were learning Java and our first project was coming up. We were still online due to COVID so I had a lot of time to spend towards this. 
-                                We needed to do something with a 2D array I believe, and for some reason Minesweeper was what I wanted to make. So the first step in making a minesweeper game, as it turns out, 
-                                is knowing how to play minesweeper. First I learned how to play minesweeper (This was a mistake, I have a debilitating addiction to it that survives to this day). Then I got 
-                                started on creating the board. This was a ton of fun as I had accidentally started using recursion without even realizing it. When a player selects a cell, if there are no bombs 
-                                around it then it also opens up every cell around it. Additionally, every cell that is opened that also does not have a neighboring bomb does the same, and the method I made did 
-                                the same. This is super obvious but at the time it blew my shit away how a core concept of the game can be coded so easily. Beyond that, the game is pretty simple and to be honest, 
-                                not good. I plan on making a web-version as well at some point and some things to improve upon is instead of creating the map when the game starts, I need to create it on players 
-                                first selection to make sure that they don't get a bomb on their first click, much like the Google version. The GUI version was a bit better since it kept track of how many flags 
-                                should be placed, had a time, and players could just click instead of type in coordinates! Feel free to <a href="https://github.com/ianc02/Minesweeper" target="_blank">download the files here!</a>
+                                Robotics was the most annoying class I ever took. First day, Dr. Ferrer told us that instead of doing live demonstrations of our robot completing that weeks task, 
+                                we just had to record a video of it doing such because they will never work when you want them to. He was right. It was so much fun translating code into physical 
+                                movement with an arduino board and bread box but I cannot tell you how many times I would write the code for a project, test it, have it work perfect, then pull out 
+                                my camera to record and it just decide to not work again for hours. Not only that, but my robot looked awful since we had to use an Android device to power it and run 
+                                the app for image processing, and all I had was a tablet so half the robot was just counterweight made out of loose batteries and rubber bands. I did love the translation 
+                                of images into useable data and the simplistic AI to implement into the robots.  
                                                         
+                            </p>
+                            <p>
+                                For my final project I wanted to do something a bit new since we had worked with sonar and video 
+                                but nothing with audio. I was able to find small microphones that was compatible with Arduino. They weren't anything crazy good but could measure decibel levels. 
+                                The plan was to have the robot intake audio commands and then search around for a corresponding color and move to it. For the first few seconds of running it would gauge ambient 
+                                sound levels as a baseline and then listen for noises outside of a normal threshold. Once it received instruction (in the form of multiple claps), it would spin and use a knn 
+                                classifier to look for a specific color and then move towards it. The great news is that both of these worked perfectly. The bad news is that they didn't work together.
+                                So much time (both all nighters and office hours) led to no real conclusion and lots of confusion and unfortunately I never got them to work together. Below are some videos 
+                                from that class that include the sound commands, topological avoidance, and one that just cracks me up every time I watch it. 
                             </p>
                         </div>
                         <div class="image-container" >
-                            <img src="../images/csprojects/textminesweeper.png" alt="Text-Based Minesweeper" class="thumbnail">
-                            <img src="../images/csprojects/boardminesweeper.png" alt="GUI Minesweeper" class="thumbnail">
-                            <img src="../images/csprojects/failminesweeper.png" alt="GUI fail Minesweeper" class="thumbnail">
-                        </div>
-                        
+
+                            <iframe class = "thumbnail" src="https://player.vimeo.com/video/545618744?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" width="480" height="270" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Graph with Sounds"></iframe>                        
+                            <iframe class = "thumbnail" src="https://player.vimeo.com/video/530605845?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" width="480" height="270" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Hallway"></iframe>
+                            <iframe class = "thumbnail" src="https://player.vimeo.com/video/524048103?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" width="480" height="270" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Plant Avoidance"></iframe>
                     </div>
                     <div class="project">
                         <div class="projectText">
-                            <h3>Algorithms!</h3>
+                            <h3><b>Game Development (Fourth Semester)</b></a></h3>
+                            <p>
+                                This class was such a blast! We learned Unity development and explored not only how to make games but the theory and reasoning behind them. Over the course 
+                                of the semester we made six games, the last one being an educational game from an on campus client. Mine ended up being Chem-Sim, which is talked about more 
+                                in the Disco Tray Studios section of the website. My favorite games that I helped develop in this course were <a href="https://jewpitter.itch.io/snail-mail" target="_blank">SnailMail</a> and <a href="https://relativecminor.itch.io/pop" target="_blank">Pop!</a>
+                                These, of course, are full of bugs and issues since they were the second and third game any of us had ever made and we only had a week to get them done. Still, they are adorable and 
+                                actually kind of fun to play! I highly recommend you give them a shot! SnailMail is short and simple, but it included a lot of new fun things like TileMaps, particles, and collisions. Pop! was 
+                                an awesome game to develop, although it is super buggy. You play as a popcorn kernel escaping a move theater popcorn machine and need to find four screwdrivers to escape. The goal of this 
+                                game was a platformer with parallax backgrounds, animations, and NPCs with dialogue. 
+                                                        
+                            </p>
+                            
+                        </div>
+                        <div class="image-container" >
+
+                            <img src="../images/csprojects/SnailMail.png" alt="Text-Based Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/Pop1.png" alt="GUI Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/pop2.png" alt="GUI fail Minesweeper" class="thumbnail">
+                        </div>
+                    <div class="project">
+                        <div class="projectText">
+                            <h3>Algorithms! (Fifth Semester)</h3>
                             <p>
                                 I don't have a ton of great coding examples from my coding class, but one of my favorite (but at first most hated) topic was dynamic programming. One of 
                                 our assignments was to work on loose justification, the thing that makes all of your lines on the right side mostly line up so it isn't super jagged. This is a 
@@ -239,7 +265,7 @@ sums = []
 
                     <div class="project">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Artificial Intelligence!</b></a>
+                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Artificial Intelligence! (Sixth Semester)</b></a>
                             <p>
                                 I took Artificial Intelligence the semester after algorithms. There were a lot of fun projects in there, and nothing that super stood out so heres a lot! It was a really fun and interesting class that took a lot of concepts from algorithms and made 
                                 them very apparent. We explored many different facets of AI in this course, both different types and the morality behind it. The entirety of all projects are 
@@ -258,7 +284,7 @@ sums = []
 
                     <div class="project" style="padding-bottom: 200px;">
                         <div class="projectText">
-                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Operating Systems</b></a>
+                            <a href="https://github.com/ianc02/CSCI335" target="_blank" style="font-size: 20px; "><b>Operating Systems (Eighth Semester)</b></a>
                             <p>
                                 This class was both the easiest and hardest class in my life. It was truly an unforgettable experience. The class was split into three main sections, and 
                                 it started out simple enough with the command line and TCP sockets. The culmination of those two sections was that we created our own virtual command prompts and servers 
