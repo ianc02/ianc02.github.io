@@ -42,9 +42,9 @@
                     Computer Science Projects
                 </h1>
                 <h3 class="center_text" style="margin-bottom: 15px;">
-                    Here are some of the projects and things I had done as a Computer Science student! This is  not even close to a complete list but hold roughly my favorite 
-                    (or most difficult) project from each class I had. It goes in chronological order so you can see my development over time! I don't have everything up right now, but 
-                    the sections are complete. 
+                    Here are some of the projects and things I had done as a Computer Science student! This is  not even close to a complete list but hold either my favorite 
+                    or most difficult project from each class I had. It goes in chronological order so you can see my development over time! This is excluding my Senior Thesis class since 
+                    it has its own page, but that was done right before Operating Systems.
                 </h3>
         
                 <div class="overlay">
@@ -94,13 +94,48 @@
                                 had been learning all semester. <a href="https://github.com/ianc02/LobsterFinal" target="_blank">Here are some of the files</a>, but more should be up soon! There have been some updates in 
                                 the codebase I used, so it isn't working at the moment. I'll update it once I find the time.
                             </p>
+                            <p>
+                                Below is a chloropleth showing the average catch location of lobsters from 1972-2019. This shows their relative movement North as ocean temperatures rise. Additionally the Agent-based model video 
+                                and graph shows the lobsters migration North and the struggle of Large fishing boats and Small fishing boats to continuously have to go further to get their normal catches.
+                            </p>
                         </div>
-                        <img src="../images/psres.jpg" alt="Lobster Choropleth Needed" >
+                        <div class="image-container" >
+                            <img src="../images/csprojects/LobsterChloropleth.png" alt="Text-Based Minesweeper" class="thumbnail">
+                            <video width = "30%" height="30%" controls class="thumbnail">
+                                <source src="../videos/LobsterSim.mp4" type="video/mp4" >
+                                Your browser does not support the video tag.
+                            </video>
+                            <img src="../images/csprojects/LobsterSimGraph.png" alt="GUI Minesweeper" class="thumbnail">
+                            
+                        </div>
                     </div>
 
                     <div class="project">
                         <div class="projectText">
                             <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Minesweeper</b></a>
+                            <p>
+                                In my data structures course, we were learning Java and our first project was coming up. We were still online due to COVID so I had a lot of time to spend towards this. 
+                                We needed to do something with a 2D array I believe, and for some reason Minesweeper was what I wanted to make. So the first step in making a minesweeper game, as it turns out, 
+                                is knowing how to play minesweeper. First I learned how to play minesweeper (This was a mistake, I have a debilitating addiction to it that survives to this day). Then I got 
+                                started on creating the board. This was a ton of fun as I had accidentally started using recursion without even realizing it. When a player selects a cell, if there are no bombs 
+                                around it then it also opens up every cell around it. Additionally, every cell that is opened that also does not have a neighboring bomb does the same, and the method I made did 
+                                the same. This is super obvious but at the time it blew my shit away how a core concept of the game can be coded so easily. Beyond that, the game is pretty simple and to be honest, 
+                                not good. I plan on making a web-version as well at some point and some things to improve upon is instead of creating the map when the game starts, I need to create it on players 
+                                first selection to make sure that they don't get a bomb on their first click, much like the Google version. The GUI version was a bit better since it kept track of how many flags 
+                                should be placed, had a time, and players could just click instead of type in coordinates! Feel free to <a href="https://github.com/ianc02/Minesweeper" target="_blank">download the files here!</a>
+                                                        
+                            </p>
+                        </div>
+                        <div class="image-container" >
+                            <img src="../images/csprojects/textminesweeper.png" alt="Text-Based Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/boardminesweeper.png" alt="GUI Minesweeper" class="thumbnail">
+                            <img src="../images/csprojects/failminesweeper.png" alt="GUI fail Minesweeper" class="thumbnail">
+                        </div>
+                        
+                    </div>
+                    <div class="project">
+                        <div class="projectText">
+                            <a href="https://github.com/ianc02/Minesweeper" target="_blank" style="font-size: 20px; "><b>Robotics</b></a>
                             <p>
                                 In my data structures course, we were learning Java and our first project was coming up. We were still online due to COVID so I had a lot of time to spend towards this. 
                                 We needed to do something with a 2D array I believe, and for some reason Minesweeper was what I wanted to make. So the first step in making a minesweeper game, as it turns out, 
@@ -199,7 +234,7 @@ sums = []
                                 </pre>
                             </p>
                         </div>
-                        <img src="../images/DiscossTray_logo_bling-2.png" alt="Algorithms Picture Needed" id="dtsimg" style="padding-right: 20px;">
+                        
                     </div>
 
                     <div class="project">
@@ -228,10 +263,14 @@ sums = []
                                 This class was both the easiest and hardest class in my life. It was truly an unforgettable experience. The class was split into three main sections, and 
                                 it started out simple enough with the command line and TCP sockets. The culmination of those two sections was that we created our own virtual command prompts and servers 
                                 that we flooded with locusts to test the stability of (with some fun additional features like caching and IP remembrance). The last section dealing with the Kernel was something else 
-                                entirely. It had three main projects, and the first was both fun and easy! Connor and I got to work on it together (technically the only project we ever worked on 
+                                entirely. 
+                            </p>
+                            <p>It had three main projects, and the first was both fun and easy! Connor and I got to work on it together (sadly the only project we ever worked on 
                                 together our entire time at Hendrix) and we made a 2 player version of Tron with Snake features (like eating fruit to grow length). Instead of normal Rust, we had 
                                 to use bare-metal Rust, which basically means without an operating system or the standard library. Besides not having access to mutable arrays and handling interrupts, it wasn't too different.
-                                Then everything changed when the File System attacked. The whole concept was creating a virtual RAM Disk to read and write from. Easy right? No. We had to create the blocks 
+                            </p>
+                            <p>
+                                Everything changed when the File System attacked. The whole concept was creating a virtual RAM Disk to read and write from. Easy right? No. We had to create the blocks 
                                 in the disk, appropriate correct informative data into them, and update them with test data with inodes. It was so confusing thinking in terms of unconnected blocks and switching 
                                 between thinking in bits and bytes. I truly don't know how we ever got it done. Then, for the last project, we got to great SWIM (Simple Windowing Machine). I have mixed feelings about this one 
                                 because although it took as long as the File System to make (like 30-50 hours idk I lost count) I actually had a lot of fun working on it (unlike the File System). The pictures below 
