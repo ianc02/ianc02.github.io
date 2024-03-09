@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Current Projects</title>
+        <link href="../style.css" rel="stylesheet">
+    </header>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PN9MB4TTNX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PN9MB4TTNX');
+</script>
+    <body>
+        
+
+        <div class="allContent">
+
+            <div class="projectsBorder left">
+                <img src="../images/code.png" alt="Left Image">
+            </div>
+            <div class="middleContent">
+                <header>
+                    <div class="page-info">
+                        Current Projects
+                    </div>
+                    <div class="navbar">
+                        <a href="../index.html">Home Page</a>
+                        <a href="../about.html">About Me</a>
+                        <a href="../resume.html">Resumes</a>
+                        <a href="../projects.html">Projects</a>
+                        <a href="../PrivacyPolicy.html">Privacy Policy</a>
+                        
+                        
+                    </div>
+                </header>
+                <h1>
+                    Current Projects
+                </h1>
+                <h3 class="center_text" style="margin-bottom: 15px;">
+                    I'm making sure I keep up to date with old interests as well as learning new skills so I can hone myself as a well rounded software engineer. Currently, there are two 
+                    main projects I am working on. The first is an untitled game I work on in my spare time, and the other is learning ethical hacking.
+                </h3>
+        
+                <div class="overlay">
+                    <div class="preview-container">
+                        <span class="close-btn">&times;</span>
+                        <img src="" alt="Preview Image" class="preview-image">
+                    </div>
+                </div>
+                <div class="projectsContainer">
+
+                    <div class="project">
+                        <div class="projectText">
+                            <b>Untitled Game</b>
+                            <p>
+                                This is a new game I've been working on in my spare time. I'm honestly still not sure where it will end up but 
+                                there are a few ideas that I've been juggling around. This game came from the desire to make a game with a horror element. It's something Jonathon and I had joked about 
+                                for a while but I always loved games that have an unexpected unnerving presence (think <i>Majoras Mask</i>, <i>Firewatch</i>, and <i>Outer Wilds</i>). None of 
+                                these games are horror at their core, but they all have some of the best horror sequences I've ever played and I think that having those elements makes the game 
+                                as a whole more fun. 
+                            </p>
+                           
+                        </div>
+                        
+                        <div class= "image-container">
+                            <img src="../images/csprojects/Map.png" alt="The Cycle Map" class="thumbnail">
+                        </div>
+                        
+                    </div>
+
+                    <div class="project">
+                        <div class="projectText">
+                            <b>Ethical Hacking</b>
+                            <p>
+                                I started learning website hacking a few weeks ago with my brother. We've only really gotten into the basics so far like cross-site scripting (XSS) and 
+                                Insecure DIrect Object References (IDOR) for example while also learning some useful tools and resources like BurpSuite and PicoCTF. It is a lot different from anything 
+                                I am used to, so there has been a bit of a learning curve.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="projectsBorder right">
+                <img src="../images/chem.jpg" alt="chem Image">
+
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>Chemistry Image by <a href="https://www.freepik.com/free-vector/hand-drawn-chemistry-background-blackboard_4459170.htm#query=chemistry%20pattern&position=39&from_view=search&track=ais">Freepik</a></p>
+    </footer>
+    <style>
+        .projectsContainer{
+            background-color: azure;
+            display: block;
+            
+        }
+        .project {
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .project img {
+            width: 300px;
+            height: 200px;
+            padding-left: 50px;
+        }
+        .projectText{
+            white-space: normal; /* Allow text to wrap onto multiple lines */
+            word-wrap: break-word; /* Break long words and wrap text when needed */
+            overflow: auto;
+            padding: 10px 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
+            justify-content: center; /* Center align the images horizontally */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ensure images don't exceed the container width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 5px; /* Add some spacing between images */
+            padding: 5px 10px;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 9999;
+        }
+        .preview-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 60%;
+        }
+        .preview-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid white;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 35px;
+            columns: white;
+            cursor: pointer;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .center_text{
+            text-align: center;
+            max-width: 50em;
+            margin: 0 auto;
+            word-wrap: break-word;
+        }
+    </style>
+    <script>
+        const dtsimg = document.getElementById("dtsimg");
+        const kansasimg = document.getElementById("kansasimg");
+        const thesisimg = document.getElementById("thesisimg");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        const overlay = document.querySelector(".overlay");
+        const previewImage = document.querySelector(".preview-image");
+        const closeBtn = document.querySelector(".close-btn");
+        
+
+        thumbnails.forEach(thumb =>{
+            thumb.addEventListener('click', ()=>{
+                if (event.target.classList.contains("thumbnail") ){
+                    event.stopPropagation();
+                    
+                    previewImage.src = event.target.src;
+                    overlay.style.display = "block";
+         
+                }
+                else{
+                    infoInteraction(event.currentTarget, true);
+                }
+            })
+        })
+        closeBtn.addEventListener('click', ()=>{
+            overlay.style.display = "none";
+        })
+        overlay.addEventListener("click", (event) =>{
+            if (event.target === overlay){
+                overlay.style.display = "none";
+            }
+        })
+
+
+       
+    </script>
+</html>
